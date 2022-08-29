@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <Layout>
+      Open a Modal or Alert by clicking one of the buttons below. When you attempt to close the modal, an alert will be shown inside the modal's portal to confirm that you want to close it.
+      <br><br>
       <Button @click="showModal">
         Show Modal
       </Button>

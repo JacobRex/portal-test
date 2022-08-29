@@ -17,17 +17,17 @@
         Are you sure you want to close this modal?
         <template #actions>
           <Button
+            fullwidth
+            @click="closeModal"
+          >
+            Yes
+          </Button>
+          <Button
             variant="outline"
             fullwidth
             @click="closeAlert"
           >
             No
-          </Button>
-          <Button
-            fullwidth
-            @click="closeModal"
-          >
-            Yes
           </Button>
         </template>
       </Alert>
@@ -40,7 +40,7 @@
         Cancel
       </Button>
       <Button
-        @click="showAlert"
+        @click="closeModal"
       >
         Save
       </Button>
